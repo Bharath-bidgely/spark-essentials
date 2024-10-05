@@ -1,0 +1,46 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.6 (Amazon.com Inc. Java 11.0.24)
+[debug] Load.defaultLoad until apply took 59.915167ms
+[debug]           Load.loadUnit: plugins took 41.967125ms
+[debug]           Load.loadUnit: defsScala took 0.143083ms
+[debug] [Loading] Scanning directory /Users/bharath/Library/CloudStorage/GoogleDrive-bharath@bidgely.com/My Drive/Scala_Learning/spark-essentials/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/bharath/Library/CloudStorage/GoogleDrive-bharath@bidgely.com/My Drive/Scala_Learning/spark-essentials/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 7.72875 ms
+[debug]               Load.resolveProject(spark-essentials-build) took 25.846667ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id spark-essentials-build, base: /Users/bharath/Library/CloudStorage/GoogleDrive-bharath@bidgely.com/My Drive/Scala_Learning/spark-essentials/project, plugins: List(<none>))) took 50.231458ms
+[debug] [Loading] Done in /Users/bharath/Library/CloudStorage/GoogleDrive-bharath@bidgely.com/My Drive/Scala_Learning/spark-essentials/project, returning: (spark-essentials-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 59.949542ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.099958ms
+[debug]         Load.loadUnit(file:/Users/bharath/Library/CloudStorage/GoogleDrive-bharath@bidgely.com/My%20Drive/Scala_Learning/spark-essentials/project/, ...) took 104.470792ms
+[debug]       Load.apply: load took 295.663333ms
+[debug]       Load.apply: resolveProjects took 3.107375ms
+[debug]       Load.apply: finalTransforms took 31.98875ms
+[debug]       Load.apply: config.delegates took 3.754333ms
+[debug]       Load.apply: Def.make(settings)... took 210.30325ms
+[debug]       Load.apply: structureIndex took 41.610584ms
+[debug]       Load.apply: mkStreams took 0.972083ms
+[info] loading project definition from /Users/bharath/Library/CloudStorage/GoogleDrive-bharath@bidgely.com/My Drive/Scala_Learning/spark-essentials/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
