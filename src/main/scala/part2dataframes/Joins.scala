@@ -13,7 +13,8 @@ object Joins extends App {
   // Set log level to ERROR
   spark.sparkContext.setLogLevel("ERROR")
 
-  //println(spark.conf.getAll)
+  println(spark.conf.getAll)
+
 
 
 }
