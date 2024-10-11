@@ -1,7 +1,7 @@
 package part2dataframes
 
 import Aggregations.spark
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
 
 object Aggregations extends App {
@@ -17,8 +17,21 @@ object Aggregations extends App {
   // Set log level to ERROR
   spark.sparkContext.setLogLevel("ERROR")
 
-  val moviesDF = spark.read.option("inferSchema","true").json("src/main/resources/data/movies.json")
-  moviesDF.show(2)
+  // Load movies DataFrame
+  lazy val moviesDF: DataFrame = {
+    val df = spark.read.option("inferSchema", "true").json("src/main/resources/data/movies.json")
+    //df.show(2) // Ensure the DataFrame is loaded
+    df
+  }
+
+  if (moviesDF == null) {
+    throw new NullPointerException("moviesDF is null")
+  }
+
+  // Method to get moviesDF
+  def getMoviesDF: DataFrame = moviesDF
+
+  //getMoviesDF.show(2)
 
   //counting records based on a column
 
