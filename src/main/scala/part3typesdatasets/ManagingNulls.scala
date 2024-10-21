@@ -13,6 +13,8 @@ object ManagingNulls extends App {
 
   val moviesDF = spark.read.option("inferSchema", "true").json("src/main/resources/data/movies.json")
 
+  
+
 
 
 
