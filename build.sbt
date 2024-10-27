@@ -2,11 +2,12 @@ name := "spark-essentials"
 
 version := "0.2"
 
-scalaVersion := "2.13.12"
+scalaVersion := "2.13.2"
 
 val sparkVersion = "3.5.0"
 val postgresVersion = "42.6.0"
 val log4jVersion = "2.20.0"
+val sparkExcelVersion = "3.5.1_0.20.4"
 
 resolvers ++= Seq(
   "bintray-spark-packages" at "https://dl.bintray.com/spark-packages/maven",
@@ -22,7 +23,8 @@ libraryDependencies ++= Seq(
   "org.apache.logging.log4j" % "log4j-api" % log4jVersion,
   "org.apache.logging.log4j" % "log4j-core" % log4jVersion,
   // postgres for DB connectivity
-  "org.postgresql" % "postgresql" % postgresVersion
+  "org.postgresql" % "postgresql" % postgresVersion,
+  "com.crealytics" %% "spark-excel" % sparkExcelVersion
 )
 
 javacOptions ++= Seq("-source", "11", "-target", "11")
