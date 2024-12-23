@@ -1,5 +1,6 @@
 package part3typesdatasets
 
-object Datasets {
+object Datasets extends App {
+
 
 }
